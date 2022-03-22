@@ -1,0 +1,29 @@
+
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+
+
+
+.header a{
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.header a:hover{
+    color: orange;
+}
+
+.h-parent{
+    background-color: #1C2B35;
+    height: 80px;
+    justify-content: center;
+    display: flex;
+    overflow-x: hidden;
+    
+}

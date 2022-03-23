@@ -24,3 +24,10 @@
     }
 }
 
+.cart-container{
+    background-color: rgba(255, 153, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    
+}

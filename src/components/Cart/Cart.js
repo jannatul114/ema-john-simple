@@ -5,7 +5,7 @@ import './Cart.css';
 
 const Cart = (props) => {
     const { cart } = props;
-
+    console.log(props.children);
     let total = 0;
     let shipping = 0;
     let quantity = 0;
@@ -28,12 +28,13 @@ const Cart = (props) => {
             <p>Total Shipping cost: ${shipping}</p>
             <p>Tax: {tax}</p>
             <h4>Grand Total: $ {grandTotal.toFixed(2)}</h4>
+            {props.children}
 
 
             <div className='btns'>
                 <div className='btn'>
-                    <button className='single-btn clear-btn'>Clear Cart <FontAwesomeIcon icon={faTrash}></FontAwesomeIcon> </button>
-                    <button className='single-btn order-btn'>Review Order <FontAwesomeIcon icon={faArrowCircleRight}></FontAwesomeIcon></button>
+                    {/* <button className='single-btn clear-btn'>Clear Cart <FontAwesomeIcon icon={faTrash}></FontAwesomeIcon> </button>
+                    <button className='single-btn order-btn'>Review Order <FontAwesomeIcon icon={faArrowCircleRight}></FontAwesomeIcon></button> */}
                 </div>
             </div>
         </div>
